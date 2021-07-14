@@ -13,92 +13,314 @@
 	<title>SHOPNO</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link href="css/lightbox.css" rel="stylesheet" />
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+		integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 </head>
-<header class="header">
-	<div class="container">
-		<div class="header__inner">
-			<a class="header__link" href="#"><img class="header__logo" src="img/Logo.png" alt="Logo"></a>
-		</div>
-		<div class="header__text">
-			<h1 class="header__title">Say Hello to SHOPNO!<br>Agency CORPORATE SHOPNO Theme</h1>
-		</div>
-		<div class="header__form">
-			<button class="header__button">CONTACT US</button>
-		</div>
-		<div class="header__item">
-		</div>
-	</div>
-</header>
-<main class="main">
-	<section class="about">
-		<div class="about__inner">
-			<div class="about__promo">
-				<h2 class="about__title">ABOUT US</h2>
-				<p class="about__text">Lorem ipsum dolor sit amet event landing template</p>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<a class="header__link" href="#"><img class="header__logo" src="img/Logo.png" alt="Logo"></a>
 			</div>
+	</header>
+	<section class="welcome">
+		<div class="container">
+			<div class="welcome__content">
+				<h1 class="welcome__title">Say Hello to <span class="welcome__bgtitle">SHOPNO!</span></h1>
+				<p class="welcome__text"><span class="welcome__bgtext">Agency</span> CORPORATE SHOPNO Theme</p>
+				<a href="#" class="welcome__button">CONTACT US</a>
+				<div class="welcome__item">
+					<img class="welcome__glass" src="img/img-juice.png" alt="juice">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			<h2 class="about__title">ABOUT US</h2>
+			<p class="about__text">Lorem ipsum dolor sit amet event landing template</p>
 			<div class="about__content">
+				<div class="about__img">
+					<img src="img/about-img.png" alt="About image">
+				</div>
 				<div class="about__info">
 					<h3 class="about__subtitle">WE ACTUALLY DO AMAZING WORKS</h3>
 					<p class="about__subtext">A visual approach is an approach to a runway at an airport
 						conducted under instrument flight rules. The pilot must at all times have either the airport or the
-						preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at all
+						preceding aircraft in approach correct sight. conducted under instrument flight rules. The pilot must at
+						all
 						times.
-						Preceding aircraft in approach correct sight. conducted under instrument flight rules.</p>
+						<br>
+						<br>
+						Preceding aircraft in approach correct sight. conducted under instrument flight rules.
+					</p>
 					<h3 class="about__subtitle">WE ACTUALLY DO AMAZING WORKS</h3>
 					<p class="about__subtext">A visual approach is an approach to a runway at an airport
-						conducted under instrument flight rules.
+						conducted under instrument flight rules. <br>
 						The preceding aircraft in approach correct sight.</p>
-				</div>
-				<div class="about__img">
-					<img src="img/about-img.jpg" alt="About image">
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="works">
 		<div class="container">
-			<div class="works__info">
-				<h2 class="works__title">FEATURED WORKS</h2>
-				<p class="works__text">Lorem ipsum dolor sit amet event landing template</p>
-			</div>
+			<h2 class="works__title">FEATURED WORKS</h2>
+			<p class="works__text">Lorem ipsum dolor sit amet event landing template</p>
 			<div class="works__photo">
-				<img src="img/work-img1.jpg" alt="">
-				<img src="img/work-img2.jpg" alt="">
-				<img src="img/work-img3.jpg" alt="">
-				<img src="img/work-img4.jpg" alt="">
-				<img src="img/work-img5.jpg" alt="">
-				<img src="img/work-img6.jpg" alt="">
+				<ul class="works__list">
+					<li class="works__item"><a href="img/work-img1.jpg" data-lightbox="imagegroup"><img src="img/work-img1.jpg"
+								alt="1"></a></li>
+					<li class="works__item"><a href="img/work-img2.jpg" data-lightbox="imagegroup"><img src="img/work-img2.jpg"
+								alt="2"></a></li>
+					<li class="works__item"><a href="img/work-img3.jpg" data-lightbox="imagegroup"><img src="img/work-img3.jpg"
+								alt="3"></a></li>
+					<li class="works__item"><a href="img/work-img4.jpg" data-lightbox="imagegroup"><img src="img/work-img4.jpg"
+								alt="4"></a></li>
+					<li class="works__item"><a href="img/work-img5.jpg" data-lightbox="imagegroup"><img src="img/work-img5.jpg"
+								alt="5"></a></li>
+					<li class="works__item"><a href="img/work-img6.jpg" data-lightbox="imagegroup"><img src="img/work-img6.jpg"
+								alt="6"></a></li>
+				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="team">
 		<div class="container">
-			<div class="team__info">
-				<h2 class="team__title">SMALL TEAM</h2>
-				<p class="team__text">Lorem ipsum dolor sit amet event landing template</p>
-			</div>
+			<h2 class="team__title">SMALL TEAM</h2>
+			<p class="team__text">Lorem ipsum dolor sit amet event landing template</p>
 			<div class="team__photo">
-				<img src="img/team-img1.jpg" alt="">
-				<img src="img/team-img2.jpg" alt="">
-				<img src="img/team-img3.jpg" alt="">
-				<img src="img/team-img4.jpg" alt="">
-				<img src="img/team-img5.jpg" alt="">
-				<img src="img/team-img6.jpg" alt="">
+				<ul class="team__list">
+					<li class="team__item"><img src="img/team-img1.jpg" alt="">
+						<div class="team__description">
+							<div class="team__info">
+								<p class="team__name">AMANDA
+									<span class="team__profession"> / UX Designer</span>
+								</p>
+								<p class="team__text">Lorem Ipsum is not simply is an action designer random text
+									<br>It has roots in a
+									piece
+								</p>
+							</div>
+							<ul class="team__social">
+								<li class="team__items"><a href="#" class="team__button" title="facebook"><span
+											class="team__webicon">facebook</span><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="twitter"><span
+											class="team__webicon">twitter</span><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="pinterest"><span
+											class="team__webicon">pinterest</span><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="email"><span
+											class="team__webicon">email</span><i class="far fa-envelope"></i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="team__item"><img src="img/team-img2.jpg" alt="">
+						<div class="team__description">
+							<div class="team__info">
+								<p class="team__name">AL RAYHAN
+									<span class="team__profession"> / UI Designer</span>
+								</p>
+								<p class="team__text">Lorem Ipsum is not simply is an action designer random text
+									<br>It has roots in a
+									piece
+								</p>
+							</div>
+							<ul class="team__social">
+								<li class="team__items"><a href="#" class="team__button" title="facebook"><span
+											class="team__webicon">facebook</span><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="twitter"><span
+											class="team__webicon">twitter</span><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="pinterest"><span
+											class="team__webicon">pinterest</span><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="email"><span
+											class="team__webicon">email</span><i class="far fa-envelope"></i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="team__item"><img src="img/team-img3.jpg" alt="">
+						<div class="team__description">
+							<div class="team__info">
+								<p class="team__name">JOHN
+									<span class="team__profession"> / Developer </span>
+								</p>
+								<p class="team__text">Lorem Ipsum is not simply is an action designer random text
+									<br>It has roots in a
+									piece
+								</p>
+							</div>
+							<ul class="team__social">
+								<li class="team__items"><a href="#" class="team__button" title="facebook"><span
+											class="team__webicon">facebook</span><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="twitter"><span
+											class="team__webicon">twitter</span><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="pinterest"><span
+											class="team__webicon">pinterest</span><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="email"><span
+											class="team__webicon">email</span><i class="far fa-envelope"></i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="team__item"><img src="img/team-img4.jpg" alt="">
+						<div class="team__description">
+							<div class="team__info">
+								<p class="team__name">ALEX
+									<span class="team__profession"> / UI Designer</span>
+								</p>
+								<p class="team__text">Lorem Ipsum is not simply is an action designer random text
+									<br>It has roots in a
+									piece
+								</p>
+							</div>
+							<ul class="team__social">
+								<li class="team__items"><a href="#" class="team__button" title="facebook"><span
+											class="team__webicon">facebook</span><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="twitter"><span
+											class="team__webicon">twitter</span><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="pinterest"><span
+											class="team__webicon">pinterest</span><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="email"><span
+											class="team__webicon">email</span><i class="far fa-envelope"></i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="team__item"><img src="img/team-img5.jpg" alt="">
+						<div class="team__description">
+							<div class="team__info">
+								<p class="team__name">KATE
+									<span class="team__profession"> / UX Designer</span>
+								</p>
+								<p class="team__text">Lorem Ipsum is not simply is an action designer random text
+									<br>It has roots in a
+									piece
+								</p>
+							</div>
+							<ul class="team__social">
+								<li class="team__items"><a href="#" class="team__button" title="facebook"><span
+											class="team__webicon">facebook</span><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="twitter"><span
+											class="team__webicon">twitter</span><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="pinterest"><span
+											class="team__webicon">pinterest</span><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="email"><span
+											class="team__webicon">email</span><i class="far fa-envelope"></i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="team__item"><img src="img/team-img6.jpg" alt="">
+						<div class="team__description">
+							<div class="team__info">
+								<p class="team__name">SIMONA
+									<span class="team__profession"> / UI Designer</span>
+								</p>
+								<p class="team__text">Lorem Ipsum is not simply is an action designer random text
+									<br>It has roots in a
+									piece
+								</p>
+							</div>
+							<ul class="team__social">
+								<li class="team__items"><a href="#" class="team__button" title="facebook"><span
+											class="team__webicon">facebook</span><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="twitter"><span
+											class="team__webicon">twitter</span><i class="fab fa-twitter"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="pinterest"><span
+											class="team__webicon">pinterest</span><i class="fab fa-pinterest"></i></a>
+								</li>
+								<li class="team__items"><a href="#" class="team__button" title="email"><span
+											class="team__webicon">email</span><i class="far fa-envelope"></i></a>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</section>
 	<section class="message">
+		<div class="container">
+			<div class="message__inner">
+				<form class="message__form" id="nameform">
+					<ul class="message__list">
+						<li class="message__item">
+							<input class="message__input" type="text" name="name" placeholder="Name*" required>
+						</li>
+						<li class="message__item">
+							<input class="message__input" type="text" name="subject" placeholder="Subject*" required>
+						</li>
+						<li class="message__item">
+							<input class="message__input" type="email" name="email" placeholder="E-mail*" required>
+						</li>
+						<li class="message__item">
+							<textarea class="message__input" rows="5" name="user_message" placeholder="Message*" required></textarea>
+						</li>
+					</ul>
+					<button type="submit" form="nameform" class="message__button">SEND MESSAGE</button>
+				</form>
+				<div class="message__info">
+					<p class="message__text"> Adress line 1 </p>
+					<p class="message__text"> Adress line 2 </p>
+					<p class="message__text">
+						Phone: <a class="message__link" href="tel:+548945645">+548 945645</a>
+					</p>
+					<p class="message__text">
+						Fax: <a class="message__link" href="tel:+45645654546">+456456 54546</a>
+					</p>
+					<div class="message__web">
+						<p class="message__text">
+							Web: <a class="message__link" href="http://www.designagency.net">www.designagency.net</a>
+						</p>
+						<p class="message__text">
+							E-mail: <a class="message__link" href="mailto:info@designagency.net">info@designagency.net</a>
+						</p>
+					</div>
+					<div class="message__map">
+						<script type="text/javascript" charset="utf-8" async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A828b7778f5465a1935e6996477e8a4cbded35f85265552e897b91284b333eecb&amp;width=400&amp;height=223&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
 
+				</div>
+			</div>
+		</div>
 	</section>
 	</div>
-</main>
-<footer class="footer">
-	<div class="container"></div>
-</footer>
-
-
-<body>
-
+	<footer class="footer">
+		<div class="container">
+			<h4 class="footer__title">FOLLOW US</h4>
+			<ul class="footer__list">
+				<li class="footer__item"><a href="#" class="footer__pinterest" title="pinterest"><i
+							class="fab fa-pinterest-square"></i></a></li>
+				<li class="footer__item"><a href="#" class="footer__twitter" title="twitter"><i class="fab fa-twitter"></i></a>
+				</li>
+				<li class="footer__item "><a href="#" class=" footer__facebook" title="facebook"><i
+							class="fab fa-facebook-f"></i></a></li>
+				<li class="footer__item"><a href="#" class="footer__email" title="email"><i class="fas fa-globe"></i></a></li>
+			</ul>
+		</div>
+	</footer>
 </body>
 
 </html>
