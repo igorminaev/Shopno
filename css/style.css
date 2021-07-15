@@ -6,8 +6,14 @@ body {
   background-color: #eff0f2;
 }
 
-.header .header__inner {
+.header__inner {
   padding: 64px 0;
+}
+
+@media (max-width: 1080px) {
+  .header__inner {
+    padding: 60px 20px;
+  }
 }
 
 .container {
@@ -15,154 +21,278 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 1080px) {
+  .container {
+    max-width: 100%;
+    padding: 0 30px;
+  }
+}
+
 .welcome {
   background-color: #eff0f2;
   text-align: center;
 }
 
-.welcome .welcome__content {
-  padding: 142px 0 100px;
+.welcome__content {
+  padding: 136px 0 100px;
 }
 
-.welcome .welcome__content .welcome__title {
+.welcome__title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 45px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
   color: #505050;
   text-shadow: 9px 9px 10px rgba(0, 0, 0, 0.25);
-  margin-bottom: 6px;
+  margin-bottom: 14px;
 }
 
-.welcome .welcome__content .welcome__title .welcome__bgtitle {
+@media (max-width: 1080px) {
+  .welcome__title {
+    font-size: 35px;
+  }
+}
+
+.welcome__bgtitle {
   background-color: #b2f2ee;
 }
 
-.welcome .welcome__content .welcome__text {
+.welcome__text {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 45px;
+  letter-spacing: 1.8px;
   color: #505050;
   text-shadow: 9px 9px 10px rgba(0, 0, 0, 0.25);
-  margin-bottom: 150px;
+  margin-bottom: 145px;
 }
 
-.welcome .welcome__content .welcome__text .welcome__bgtext {
+@media (max-width: 1080px) {
+  .welcome__text {
+    font-size: 35px;
+  }
+}
+
+.welcome__bgtext {
   background-color: #b2f2ee;
 }
 
-.welcome .welcome__content .welcome__button {
+.welcome__button {
   margin: 0 auto;
   text-align: center;
   border: 1px solid #777879;
   border-radius: 1px;
-  padding: 18px 47px;
+  padding: 16px 55px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   color: #606061;
   display: inline-block;
 }
 
-.welcome .welcome__content .welcome__button:hover {
+@media (max-width: 1080px) {
+  .welcome__button {
+    padding: 15px 30px;
+    font-size: 13px;
+  }
+}
+
+.welcome__button:hover {
   background-color: lightblue;
 }
 
-.welcome .welcome__glass {
+.welcome__glass {
   height: 95px;
   position: relative;
   top: -30px;
-  right: -400px;
+  right: -442px;
+}
+
+@media (max-width: 1080px) {
+  .welcome__glass {
+    right: -130px;
+    height: 70px;
+  }
 }
 
 .about {
-  padding: 130px 0 148px;
+  padding: 125px 0 148px;
 }
 
-.about .about__title {
+.about__title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 38px;
   color: #323333;
+  letter-spacing: 2px;
   margin-bottom: 20px;
   text-align: center;
   margin-bottom: 12px;
 }
 
-.about .about__text {
+@media (max-width: 1080px) {
+  .about__title {
+    font-size: 28px;
+  }
+}
+
+.about__text {
   font-size: 18px;
   color: #848585;
   text-align: center;
-  margin-bottom: 150px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-bottom: 143px;
 }
 
-.about .about__content {
+@media (max-width: 1080px) {
+  .about__text {
+    font-size: 14px;
+  }
+}
+
+.about__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 80px;
+  padding: 0 60px;
 }
 
-.about .about__content .about__img {
+@media (max-width: 1080px) {
+  .about__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about__img {
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 19px;
 }
 
-.about .about__content .about__info {
-  padding-left: 150px;
+@media (max-width: 1080px) {
+  .about__img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+  }
 }
 
-.about .about__content .about__info .about__subtitle {
+.about__info {
+  padding-left: 158px;
+}
+
+@media (max-width: 1080px) {
+  .about__info {
+    padding-left: 5px;
+    text-align: center;
+  }
+}
+
+.about__subtitle {
   font-weight: bold;
   font-size: 20px;
   color: #646565;
-  margin-bottom: 23px;
+  margin-bottom: 21px;
   padding-top: 4px;
+  letter-spacing: 1.35px;
 }
 
-.about .about__content .about__info .about__subtext {
+@media (max-width: 1080px) {
+  .about__subtitle {
+    font-size: 17px;
+  }
+}
+
+.about__subtext {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: #636464;
   line-height: 28px;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1080px) {
+  .about__subtext {
+    font-size: 14px;
+  }
 }
 
 .works {
-  padding: 150px 0 100px;
+  padding: 143px 0 100px;
 }
 
-.works .works__title {
+.works__title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 38px;
   color: #323333;
   margin-bottom: 20px;
   text-align: center;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
-.works .works__text {
+@media (max-width: 1080px) {
+  .works__title {
+    font-size: 28px;
+  }
+}
+
+.works__text {
   font-size: 18px;
   color: #848585;
   text-align: center;
-  margin-bottom: 150px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-bottom: 121px;
 }
 
-.works .works__photo .works__list {
+@media (max-width: 1080px) {
+  .works__text {
+    font-size: 14px;
+  }
+}
+
+.works__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 15px;
+}
+
+@media (max-width: 1200px) {
+  .works__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .works__list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
 }
 
 .team {
-  padding: 125px 0 100px;
+  padding: 117px 0 100px;
 }
 
-.team .team__title {
+.team__title {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 38px;
@@ -172,14 +302,28 @@ body {
   margin-bottom: 12px;
 }
 
-.team .team__text {
+@media (max-width: 1080px) {
+  .team__title {
+    font-size: 28px;
+  }
+}
+
+.team__text {
   font-size: 18px;
   color: #848585;
   text-align: center;
-  margin-bottom: 150px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  margin-bottom: 118px;
 }
 
-.team .team__photo .team__list {
+@media (max-width: 1080px) {
+  .team__text {
+    font-size: 14px;
+  }
+}
+
+.team__list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
@@ -187,19 +331,36 @@ body {
   grid-gap: 15px;
 }
 
-.team .team__photo .team__list .team__item {
+@media (max-width: 1200px) {
+  .team__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .team__list {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+
+.team__item {
   position: relative;
 }
 
-.team .team__photo .team__list .team__item:hover {
+.team__item:hover {
   cursor: pointer;
 }
 
-.team .team__photo .team__list .team__item:hover .team__description {
+.team__item:hover .team__description {
   opacity: 1;
 }
 
-.team .team__photo .team__list .team__description {
+.team__description {
   opacity: 0;
   position: absolute;
   padding: 40px 38px;
@@ -214,7 +375,7 @@ body {
           transition-duration: 0.4s;
 }
 
-.team .team__photo .team__list .team__description ::after {
+.team__description::after {
   content: "";
   position: absolute;
   right: 270px;
@@ -223,18 +384,24 @@ body {
   border-bottom: 20px solid #70f6eb;
 }
 
-.team .team__photo .team__list .team__items {
+@media (max-width: 500px) {
+  .team__description {
+    max-width: 100%;
+  }
+}
+
+.team__items {
   font-size: 13px;
   display: inline;
   margin-right: 10px;
 }
 
-.team .team__photo .team__list .team__items a {
+.team__items a {
   padding-right: 10px;
   cursor: pointer;
 }
 
-.team .team__photo .team__list .team__name {
+.team__name {
   text-align: left;
   font-size: 20px;
   color: #16312f;
@@ -242,7 +409,7 @@ body {
   margin-bottom: 15px;
 }
 
-.team .team__photo .team__list .team__profession {
+.team__profession {
   text-align: center;
   font-style: italic;
   font-size: 16px;
@@ -250,7 +417,7 @@ body {
   text-transform: none;
 }
 
-.team .team__photo .team__list .team__text {
+.team__subtext {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   color: #16312f;
@@ -262,15 +429,15 @@ body {
   max-height: 80px;
 }
 
-.team .team__photo .team__list .team__social a {
+.team__social a {
   color: #16312f;
 }
 
-.team .team__photo .team__list .team__social a:hover {
+.team__social a:hover {
   color: #dbabfa;
 }
 
-.team .team__photo .team__list .team__webicon {
+.team__webicon {
   display: none;
 }
 
@@ -279,25 +446,36 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom center;
-  padding: 120px 0;
+  padding-top: 205px;
+  padding-bottom: 125px;
 }
 
-.message .message__inner {
+.message__inner {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 58% 40%;
-      grid-template-columns: 58% 40%;
+  -ms-grid-columns: 54% 44%;
+      grid-template-columns: 54% 44%;
   grid-gap: 25px;
 }
 
-.message .message__inner .message__form {
+@media (max-width: 1200px) {
+  .message__inner {
+    -ms-grid-columns: 54%;
+        grid-template-columns: 54%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.message__form {
   background-color: #495862;
   opacity: 0.95;
   height: 460px;
   padding: 30px;
 }
 
-.message .message__inner .message__form .message__input {
+.message__input {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   color: #c8cdd0;
@@ -309,30 +487,28 @@ body {
   width: 95%;
 }
 
-.message .message__inner .message__form .message__input::-webkit-input-placeholder {
+.message__input::-webkit-input-placeholder {
   color: #c8cdd0;
 }
 
-.message .message__inner .message__form .message__input:-ms-input-placeholder {
+.message__input:-ms-input-placeholder {
   color: #c8cdd0;
 }
 
-.message .message__inner .message__form .message__input::-ms-input-placeholder {
+.message__input::-ms-input-placeholder {
   color: #c8cdd0;
 }
 
-.message .message__inner .message__form .message__input::placeholder {
+.message__input::placeholder {
   color: #c8cdd0;
 }
 
-.message .message__inner .message__form textarea {
+.message textarea {
   margin: 10px;
-  width: 588px;
-  height: 100px;
   resize: none;
 }
 
-.message .message__inner .message__form .message__button {
+.message__button {
   background-color: #6eeee4;
   border: none;
   border-radius: 2px;
@@ -341,6 +517,7 @@ body {
   cursor: pointer;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
+  font-weight: bold;
   letter-spacing: 4px;
   font-size: 16px;
   margin-top: 30px;
@@ -348,18 +525,30 @@ body {
   transition: background-color 1s;
 }
 
-.message .message__inner .message__form .message__button:hover {
+@media (max-width: 800px) {
+  .message__button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .message__button {
+    font-size: 10px;
+  }
+}
+
+.message__button:hover {
   background-color: #0f8d63;
 }
 
-.message .message__inner .message__info {
+.message__info {
   background-color: #495862;
   opacity: 0.95;
   height: 460px;
   padding: 30px;
 }
 
-.message .message__inner .message__info .message__text {
+.message__text {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
   color: #c8cdd0;
@@ -368,29 +557,30 @@ body {
   line-height: 24px;
 }
 
-.message .message__inner .message__info .message__text .message__link {
+.message__link {
   color: inherit;
 }
 
-.message .message__inner .message__info .message__web {
+.message__web {
   margin: 25px 0 15px;
 }
 
 .footer {
-  padding: 94px 0 150px;
+  padding: 85px 0 150px;
   background-color: #262b2e;
 }
 
-.footer .footer__title {
+.footer__title {
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: bold;
   color: #636464;
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   line-height: 28px;
 }
 
-.footer .footer__list {
+.footer__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -400,56 +590,24 @@ body {
   font-size: 20px;
 }
 
-.footer .footer__list .footer__pinterest {
-  padding: 10px 13px;
+.footer a {
+  width: 47px;
+  height: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #bbb8b9;
   background-color: #424648;
-  margin: 0 5px;
+  margin-right: 8px;
 }
 
-.footer .footer__list .footer__pinterest:hover {
-  background-color: #6eeee4;
-  color: #424648;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.footer .footer__list .footer__twitter {
-  padding: 10px 12px;
-  color: #bbb8b9;
-  background-color: #424648;
-  margin: 0 5px;
-}
-
-.footer .footer__list .footer__twitter:hover {
-  background-color: #6eeee4;
-  color: #424648;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.footer .footer__list .footer__facebook {
-  padding: 10px 15.5px;
-  color: #bbb8b9;
-  background-color: #424648;
-  margin: 0 5px;
-}
-
-.footer .footer__list .footer__facebook:hover {
-  background-color: #6eeee4;
-  color: #424648;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-}
-
-.footer .footer__list .footer__email {
-  padding: 10px 12px;
-  color: #bbb8b9;
-  background-color: #424648;
-  margin: 0 5px;
-}
-
-.footer .footer__list .footer__email:hover {
+.footer a:hover {
   background-color: #6eeee4;
   color: #424648;
   -webkit-transition: 0.8s;
