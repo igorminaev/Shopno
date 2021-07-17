@@ -6,7 +6,7 @@ body {
 	background-color: #eff0f2;
 	&__inner {
 		padding: 64px 0;
-		@media (max-width: 1080px) {
+		@media (max-width: 1200px) {
 			padding: 60px 20px;
 		}
 	}
@@ -15,7 +15,7 @@ body {
 .container {
 	width: 1140px;
 	margin: 0 auto;
-	@media (max-width: 1080px) {
+	@media (max-width: 1200px) {
 		max-width: 100%;
 		padding: 0 30px;
 	}
@@ -69,6 +69,7 @@ body {
 		font-size: 18px;
 		color: #606061;
 		display: inline-block;
+		transition: background-color 1s;
 		@media (max-width: 1080px) {
 			padding: 15px 30px;
 			font-size: 13px;
@@ -91,6 +92,7 @@ body {
 
 .about {
 	padding: 125px 0 148px;
+	background-color: #f8fafa;
 	&__title {
 		font-family: "Montserrat", sans-serif;
 		font-weight: bold;
@@ -118,6 +120,7 @@ body {
 	&__content {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		padding: 0 60px;
 		@media (max-width: 1080px) {
 			flex-direction: column;
@@ -125,13 +128,18 @@ body {
 	}
 	&__img {
 		box-shadow: 0px 0px 30px 0px rgba(black, 0.15);
-		padding-left: 19px;
 		@media (max-width: 1080px) {
 			display: flex;
-			justify-content: center;
+			flex-wrap: wrap;
 			margin-bottom: 10px;
 		}
 	}
+	&__picture {
+		@media (max-width: 600px) {
+			max-width: 100%;
+		}
+	}
+
 	&__info {
 		padding-left: 158px;
 		@media (max-width: 1080px) {
@@ -215,6 +223,7 @@ body {
 
 .team {
 	padding: 117px 0 100px;
+	background-color: #f9fbfb;
 	&__title {
 		font-family: "Montserrat", sans-serif;
 		font-weight: bold;
@@ -255,6 +264,7 @@ body {
 
 	&__item {
 		position: relative;
+		justify-self: center;
 		@media (max-width: 800px) {
 			justify-self: center;
 			align-self: center;
@@ -270,6 +280,7 @@ body {
 	&__picture {
 		max-width: 100%;
 	}
+
 	&__description {
 		opacity: 0;
 		position: absolute;
@@ -352,8 +363,17 @@ body {
 		grid-template-columns: 54% 44%;
 		grid-gap: 25px;
 		@media (max-width: 1200px) {
-			grid-template-columns: 54%;
+			grid-template-columns: 65%;
 			justify-content: center;
+		}
+		@media (max-width: 800px) {
+			grid-template-columns: 75%;
+		}
+		@media (max-width: 550px) {
+			grid-template-columns: 90%;
+		}
+		@media (max-width: 420px) {
+			grid-template-columns: 100%;
 		}
 	}
 	&__form {
@@ -361,6 +381,9 @@ body {
 		opacity: 0.95;
 		height: 460px;
 		padding: 30px;
+		@media (max-width: 400px) {
+			padding: 15px;
+		}
 	}
 	&__input {
 		font-family: "Raleway", sans-serif;
@@ -394,9 +417,7 @@ body {
 		font-size: 16px;
 		margin-top: 30px;
 		transition: background-color 1s;
-		@media (max-width: 800px) {
-			width: 100%;
-		}
+
 		@media (max-width: 800px) {
 			font-size: 10px;
 		}
@@ -409,6 +430,9 @@ body {
 		opacity: 0.95;
 		height: 460px;
 		padding: 30px;
+		@media (max-width: 400px) {
+			padding: 15px;
+		}
 	}
 	&__text {
 		font-family: "Raleway", sans-serif;
@@ -423,6 +447,9 @@ body {
 	}
 	&__web {
 		margin: 25px 0 15px;
+		@media (max-width: 400px) {
+			margin: 15px 0 10px;
+		}
 	}
 }
 
@@ -452,10 +479,10 @@ body {
 		color: #bbb8b9;
 		background-color: #424648;
 		margin-right: 8px;
+		transition: background-color 1s;
 		&:hover {
 			background-color: #6eeee4;
 			color: #424648;
-			transition: 0.8s;
 		}
 	}
 }
