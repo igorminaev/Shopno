@@ -482,6 +482,13 @@ body {
   max-height: 80px;
 }
 
+@media (max-width: 1200px) {
+  .team__subtext {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 .team__social a {
   color: #16312f;
 }
